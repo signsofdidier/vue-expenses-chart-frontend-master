@@ -12,7 +12,7 @@ const barStyles = data.map((item) => ({
 </script>
 
 <template>
-  <section class="max-w-md w-full">
+  <section class="max-w-md w-full m-6 md:m-0">
     <!-- Top section -->
     <div class="flex items-center justify-between bg-primary p-6 rounded-2xl">
       <!-- balance info -->
@@ -39,7 +39,7 @@ const barStyles = data.map((item) => ({
           class="text-center flex flex-col justify-end h-full relative group"
         >
           <div
-            class="w-full rounded-lg group-hover:bg-secondary/70 transition duration-200 ease-in-out relative"
+            class="w-full rounded-lg group-hover:opacity-70 transition duration-200 ease-in-out relative"
             :class="
               expense.amount === highestAmount ? 'bg-secondary' : 'bg-primary'
             "
